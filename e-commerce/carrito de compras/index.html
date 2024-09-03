@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos.css">
+    <title>Carrito de compras </title>
+</head>
+<body>
+    <div class="contenedor-header">
+        <header>
+                <div class="logo">
+                    <a href="#">Style</a>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="/e-commerce/index.html" onclick="seleccionar()">VOLVER AL INICIO</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-responsive" onclick="mostrar()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+        </header> 
+    </div>
+    <section class="contenedor">
+        <!-- Contenedor de elementos -->
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">Sudadera Con Capucha Sportswear Club Regular</span>
+                <img src="img/hoddie.webp" alt="" class="img-item">
+                <span class="precio-item">$231.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Nike Sportswear Tech Fleece - Sudadera</span>
+                <img src="img/sudadera.jpg" alt="" class="img-item">
+                <span class="precio-item">$512.990</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">NSW CLUB HOODIE PO BB</span>
+                <img src="img/sudadera2.jpg" alt="" class="img-item">
+                <span class="precio-item">$210.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Buzo Hombre Nike Park20 Fleece Pullover Soccer</span>
+                <img src="img/hoddie2.webp" alt="" class="img-item">
+                <span class="precio-item">$266.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Sudadera Gris-Negro Nike Therma</span>
+                <img src="img/pant2.webp" alt="" class="img-item">
+                <span class="precio-item">$180.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Pantalón De Sudadera Para Niños Nike Core Amplify</span>
+                <img src="img/pant3.webp" alt="" class="img-item">
+                <span class="precio-item">$172.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Pantalón Negro Nike Dri-FIT Challenger Woven</span>
+                <img src="img/pant.webp" alt="" class="img-item">
+                <span class="precio-item">$254.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Buzo Hombre Nike Park20 Fleece Pullover Soccer</span>
+                <img src="img/pan4.webp" alt="" class="img-item">
+                <span class="precio-item">$232.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Nike peak - Gorro puño alto</span>
+                <img src="img/gorro.jpeg" alt="" class="img-item">
+                <span class="precio-item">$70.800</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Nike Apex - Gorro tipo pescador</span>
+                <img src="img/gorro1.webp" alt="" class="img-item">
+                <span class="precio-item">$60.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Nike Soccer - Gorra de campus</span>
+                <img src="img/gorro2.webp" alt="" class="img-item">
+                <span class="precio-item">$57.800</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Nike Soccer - Gorra de campus</span>
+                <img src="img/gorro3.jpeg" alt="" class="img-item">
+                <span class="precio-item">$67.800</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+        </div>
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+    <div class="carrito-items">
+    </div>
+    <div class="carrito-total">
+        <div class="fila">
+            <strong>Tu Total</strong>
+            <span class="carrito-precio-total">
+                $120.000,00
+            </span>
+        </div>
+        <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+    </div>
+</div>
+</section>
+<footer>
+    <div class="footerLeft">
+        <div class="footerMenu">
+            <h1 class="fMenuTitle">Sobre nosotros</h1>
+            <ul class="fList">
+                <li class="fListItem">Company</li>
+                <li class="fListItem">Contact</li>
+                <li class="fListItem">Careers</li>
+                <li class="fListItem">Affiliates</li>
+                <li class="fListItem">Stores</li>
+            </ul>
+        </div>
+        <div class="footerMenu">
+            <h1 class="fMenuTitle">Links</h1>
+            <ul class="fList">
+                <li class="fListItem">Support</li>
+                <li class="fListItem">Refund</li>
+                <li class="fListItem">FAQ</li>
+                <li class="fListItem">Feedback</li>
+                <li class="fListItem">Stories</li>
+            </ul>
+        </div>
+        <div class="footerMenu">
+            <h1 class="fMenuTitle">Productos</h1>
+            <ul class="fList">
+                <li class="fListItem">Air Force</li>
+                <li class="fListItem">Air Jordan</li>
+                <li class="fListItem">Blazer</li>
+                <li class="fListItem">Crater</li>
+                <li class="fListItem">Hippie</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footerRight">
+        <div class="footerRightMenu">
+            <h1 class="fMenuTitle">suscribete a nuestra compañia!</h1>
+            <div class="fMail">
+                <input type="text" placeholder="ejemplo@email.com" class="fInput">
+                <button class="fButton">Unete!</button>
+            </div>
+        </div>
+        <div class="footerRightMenu">
+            <h1 class="fMenuTitle">Siguenos en:</h1>
+            <div class="fIcons">
+                <img src="./img/facebook.png" alt="" class="fIcon">
+                <img src="./img/twitter.png" alt="" class="fIcon">
+                <img src="./img/instagram.png" alt="" class="fIcon">
+                <img src="./img/whatsapp.png" alt="" class="fIcon">
+            </div>
+        </div>
+        <div class="footerRightMenu">
+            <span class="copyright">Kevin Andres Martinez U. 2023</span>
+        </div>
+    </div>
+</footer>
+<script src="app.js" async></script>
+</body>
+</html>
